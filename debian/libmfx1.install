@@ -1,0 +1,3 @@
+usr/lib/*/libmfx*.so.*
+usr/lib/*/mfx/*.so
+usr/share/mfx/plugins.cfg

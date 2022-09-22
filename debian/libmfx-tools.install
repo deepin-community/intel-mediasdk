@@ -1,0 +1,4 @@
+usr/bin/asg-hevc
+usr/bin/hevc_fei_extractor
+usr/bin/mfx-tracer-config
+usr/share/mfx/samples/*

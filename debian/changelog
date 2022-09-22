@@ -1,0 +1,64 @@
+intel-mediasdk (21.3.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 28 Sep 2021 12:51:09 +0300
+
+intel-mediasdk (21.3.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Mon, 30 Aug 2021 14:19:35 +0300
+
+intel-mediasdk (21.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop unused Build-Depends: libpciaccess-dev. (Closes: #981209)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 28 Jan 2021 15:23:06 +0200
+
+intel-mediasdk (20.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * libmfx-tools.install: Updated.
+  * libmfx1.symbols: Updated.
+  * Add debian/gitlab-ci.yml.
+  * upstream, control: Trim trailing whitespace, add upstream metadata.
+  * rules: Building the test segfaults, so make it non-fatal.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 16 Oct 2020 11:17:36 +0300
+
+intel-mediasdk (20.1.0-0ubuntu1) focal; urgency=medium
+
+  * New upstream release. (LP: #1872000)
+  * control: Use debhelper-compat, bump to 12.
+  * control: Bump policy to 4.5.0.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 10 Apr 2020 09:58:14 +0300
+
+intel-mediasdk (19.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 22 Jan 2020 16:23:19 +0200
+
+intel-mediasdk (19.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * allow-system-gtest.diff: Dropped, upstream.
+  * symbols: Updated.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 01 Aug 2019 10:41:00 +0300
+
+intel-mediasdk (18.4.1-2) unstable; urgency=medium
+
+  * copyright: Updated.
+  * Build using system gtest.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 27 Mar 2019 11:49:54 +0200
+
+intel-mediasdk (18.4.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #922226)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 13 Mar 2019 13:30:32 +0200

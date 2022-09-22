@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --builddir build/
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DENABLE_X11_DRI3=ON \
+		-DENABLE_WAYLAND=ON \
+		-DENABLE_TEXTLOG=ON \
+		-DENABLE_STAT=ON \
+		-DBUILD_ALL=ON \
+		-DUSE_SYSTEM_GTEST=ON \
+		-DINSTALL_GTEST=OFF
+# needs intel-graphics-compiler
+#		-DBUILD_KERNELS=ON
+
+override_dh_auto_test:
+	dh_auto_test || true
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_makeshlibs:
+	dh_makeshlibs -a -- -c4
